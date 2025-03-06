@@ -346,6 +346,7 @@ strong {
   background-color: #51cf66;
   color: #333;
   border-radius: 100px;
+  font-weight: 600;
 }
 
 .meal-tags {
@@ -354,4 +355,10 @@ strong {
 
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-color: 11px;
+  overflow: hidden;
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
