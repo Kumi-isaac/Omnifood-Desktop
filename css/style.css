@@ -74,12 +74,13 @@ body {
 .btn:visited {
   background-color: #e67e22;
   font-size: 2rem;
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
   display: inline-block;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
-  transition: background-color 0.3s;
+  font-weight: 600;
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -300,7 +301,7 @@ body {
   opacity: 50%;
 }
 
-.section-meal {
+.section-meals {
   padding: 9.6rem 0;
 }
 
@@ -333,7 +334,6 @@ body {
   height: 2.4rem;
   color: #e67e22;
 }
-
 strong {
   font-weight: 500;
 }
@@ -343,7 +343,6 @@ strong {
   padding: 0.4rem 0.8rem;
   text-transform: uppercase;
   font-size: 1.2rem;
-  background-color: #51cf66;
   color: #333;
   border-radius: 100px;
   font-weight: 600;
@@ -351,14 +350,48 @@ strong {
 
 .meal-tags {
   margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
 }
 
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-color: 11px;
+  border-radius: 11px;
   overflow: hidden;
 }
 
 .meal-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.tag--Vegetarian {
+  background-color: #51cf66;
+}
+
+.tag--Vegan {
+  background-color: #94d82d;
+}
+
+.tag--Paleo {
+  background-color: #ffd43b;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
