@@ -2,14 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Always include this line of code!!! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta name="description" content="The smart 365-days-per-year food
     subscription that will make you eat healthy again. Tailored to your personal
     tastes and nutritional needs. />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+
     <link rel="icon" href="img/favicon.png" />
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+   
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;
     700&display=swap"
@@ -103,14 +110,18 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="img/hero.png"
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.png" type="image/png" />
+              <img
+              src="img/hero-min.png"
               class="hero-img"
-              alt="Woman enjoying food, meals in storage container and food bowls on a table."
+              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
             />
           </div>
         </div>
       </section>
+      
       <section class="section-featured">
         <div class="container">
           <h2 class="heading-featured-in">As featured in.</h2>
@@ -688,9 +699,7 @@
             <p class="footer-heading">Account</p>
             <ul class="footer-nav">
               <li>
-                <a class="footer-link" class="footer-link" href="#"
-                  >Creat account</a
-                >
+                <a class="footer-link" href="#">Creat account</a>
               </li>
               <li><a class="footer-link" href="#">Sign in</a></li>
               <li><a class="footer-link" href="#">iOs app</a></li>
